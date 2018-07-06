@@ -12,10 +12,11 @@ s.source = { :git => 'https://github.com/maple023/WFImagePicker.git', :tag => "v
 
 s.requires_arc = true
 s.framework = "Foundation","UIKit","Photos"
+s.dependency 'MLeaksFinder'
 
-s.source_files = 'WFImagePicker/WFImagePicker/**/*'
+s.source_files = 'WFImagePicker/WFImagePicker/**/*.swift'
 s.resource_bundles = {
-   'WFImagePicker' => ['WFImagePicker/WFImagePicker/Assets/*.png']
+   'WFImagePicker' => ['WFImagePicker/WFImagePicker/**/*.png']
 }
 
 end

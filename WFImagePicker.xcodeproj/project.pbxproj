@@ -24,8 +24,8 @@
 		3C8D567F20EB168300A4D1C5 /* WFUserContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D567E20EB168300A4D1C5 /* WFUserContext.swift */; };
 		3C8D568120EB2C1700A4D1C5 /* WFPhotoBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D568020EB2C1700A4D1C5 /* WFPhotoBrowserViewController.swift */; };
 		3C8D568920EB4F4E00A4D1C5 /* WFPhotoBrowserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D568820EB4F4E00A4D1C5 /* WFPhotoBrowserCollectionViewCell.swift */; };
-		3C9CCE5920EFE8E8005F19BC /* back_left@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C9CCE5720EFE8E8005F19BC /* back_left@3x.png */; };
-		3C9CCE5A20EFE8E8005F19BC /* back_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C9CCE5820EFE8E8005F19BC /* back_left@2x.png */; };
+		3C9CCE6220EFF224005F19BC /* back_left@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C9CCE6020EFF224005F19BC /* back_left@3x.png */; };
+		3C9CCE6320EFF224005F19BC /* back_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C9CCE6120EFF224005F19BC /* back_left@2x.png */; };
 		3CF53B1320E6AE2E004B4626 /* WFPhotoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF53B1220E6AE2E004B4626 /* WFPhotoListController.swift */; };
 		3CF53B1520E6AF3A004B4626 /* WFPhotoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF53B1420E6AF3A004B4626 /* WFPhotoListTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -49,8 +49,8 @@
 		3C8D567E20EB168300A4D1C5 /* WFUserContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFUserContext.swift; sourceTree = "<group>"; };
 		3C8D568020EB2C1700A4D1C5 /* WFPhotoBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFPhotoBrowserViewController.swift; sourceTree = "<group>"; };
 		3C8D568820EB4F4E00A4D1C5 /* WFPhotoBrowserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFPhotoBrowserCollectionViewCell.swift; sourceTree = "<group>"; };
-		3C9CCE5720EFE8E8005F19BC /* back_left@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_left@3x.png"; sourceTree = "<group>"; };
-		3C9CCE5820EFE8E8005F19BC /* back_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_left@2x.png"; sourceTree = "<group>"; };
+		3C9CCE6020EFF224005F19BC /* back_left@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_left@3x.png"; sourceTree = "<group>"; };
+		3C9CCE6120EFF224005F19BC /* back_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_left@2x.png"; sourceTree = "<group>"; };
 		3CF53B1220E6AE2E004B4626 /* WFPhotoListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFPhotoListController.swift; sourceTree = "<group>"; };
 		3CF53B1420E6AF3A004B4626 /* WFPhotoListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFPhotoListTableViewCell.swift; sourceTree = "<group>"; };
 		460E2C40C3562DBCE672989A /* Pods-WFImagePicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WFImagePicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WFImagePicker/Pods-WFImagePicker.debug.xcconfig"; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 		3C36CC7020E63C6500305AA2 /* WFImagePicker */ = {
 			isa = PBXGroup;
 			children = (
-				3C9CCE5620EFE8E8005F19BC /* Resources */,
+				3C9CCE5B20EFF1DA005F19BC /* Resources */,
 				3C2833DF20E9D972002BD16A /* View */,
 				3C2833DD20E9D95F002BD16A /* Controller */,
 				3C648E5220E68F7700200155 /* Model */,
@@ -155,11 +155,11 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		3C9CCE5620EFE8E8005F19BC /* Resources */ = {
+		3C9CCE5B20EFF1DA005F19BC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3C9CCE5720EFE8E8005F19BC /* back_left@3x.png */,
-				3C9CCE5820EFE8E8005F19BC /* back_left@2x.png */,
+				3C9CCE6120EFF224005F19BC /* back_left@2x.png */,
+				3C9CCE6020EFF224005F19BC /* back_left@3x.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -234,8 +234,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C36CC6920E63B4200305AA2 /* LaunchScreen.storyboard in Resources */,
-				3C9CCE5A20EFE8E8005F19BC /* back_left@2x.png in Resources */,
-				3C9CCE5920EFE8E8005F19BC /* back_left@3x.png in Resources */,
+				3C9CCE6320EFF224005F19BC /* back_left@2x.png in Resources */,
+				3C9CCE6220EFF224005F19BC /* back_left@3x.png in Resources */,
 				3C36CC6620E63B4200305AA2 /* Assets.xcassets in Resources */,
 				3C36CC6420E63B4000305AA2 /* Main.storyboard in Resources */,
 			);
