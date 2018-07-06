@@ -1,4 +1,4 @@
-@version = '0.0.2'
+@version = '0.0.3'
 Pod::Spec.new do |s|
 s.name = 'WFImagePicker'
 s.version = @version
@@ -13,7 +13,9 @@ s.source = { :git => 'https://github.com/maple023/WFImagePicker.git', :tag => "v
 s.requires_arc = true
 s.framework = "Foundation","UIKit","Photos"
 
-s.source_files = 'WFImagePicker/Source/**/*'
-s.resources = 'WFImagePicker/Source/Resources.bundle'
+s.source_files = 'WFImagePicker/WFImagePicker/**/*'
+s.resource_bundles = {
+   'WFImagePicker' => ['WFImagePicker/WFImagePicker/Assets/*.png']
+}
 
 end
