@@ -5,7 +5,7 @@ Swift仿QQ图片选择器
 ![](https://github.com/maple023/WFImagePicker/blob/master/ios.gif)
 
 
-### 使用方法
+### 导入方法
 - 直接把Source文件夹拖入到您的工程中.
 
 ```swift
@@ -19,14 +19,14 @@ pod search WFImagePicker
 pod 'WFImagePicker'
 ```
 
-如果发现pod search WFImagePicker,然后执行pod repo update --verbose命令更新本地spec缓存（可能需要几分钟），然后再搜索就可以了.
+如果没有发现WFImagePicker,然后执行pod repo update --verbose命令更新本地spec缓存（可能需要几分钟），然后再搜索就可以了.
 
 
 
 
 ### 调用方法
 
-- 创建方法
+-  创建
 ```swift
 
 		///一些可修改的 样式配置  不传则显示默认的样式
@@ -76,5 +76,5 @@ pod 'WFImagePicker'
     }
 ```
 
-### Example中导入MLeaksFinder框架 只是用于测试内存泄露，并不妨碍项目本身，使用时无需关心。
+#### Example中导入MLeaksFinder框架 只是用于测试内存泄露，并不妨碍项目本身，使用时无需关心。
 
