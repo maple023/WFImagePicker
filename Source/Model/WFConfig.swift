@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+// 发布到 Pods是改为 true    true:发布到Pods  false :开发
+let Release = true
+
 let WF_SCREEN_BOUNDS = UIScreen.main.bounds
 let WF_SCREEN_WIDTH = WF_SCREEN_BOUNDS.width
 let WF_SCREEN_HEIGHT = WF_SCREEN_BOUNDS.height
@@ -37,19 +40,11 @@ let WF_NavSafeAreaTopHeight:CGFloat = (WF_iPhoneX ? 88.0 : 64.0)
 let WF_TabSafeAreaBottomHeight:CGFloat = (WF_iPhoneX ? 49.0 + 34.0 : 49.0)
 
 
-
-extension UIView {
-    
-    func getCurrentViewController() -> UIViewController? {
-        var next = self.next;
-        repeat {
-            if next is UIViewController {
-                return (next as! UIViewController)
-            }
-            next = next?.next
-        } while (next != nil)
-        
-        return nil
+// 获取 图片路径
+func WFBundlePath(_ fileName:String) -> String {
+    if Release {
+        return "Frameworks/Frameworks.framework/WFImagePicker.bundle/\(fileName)"
+    } else {
+        return "WFImagePicker.bundle/\(fileName)"
     }
-    
 }

@@ -9,18 +9,18 @@
 import UIKit
 import Photos
 
-class WFImageAlbumModel: NSObject {
+public class WFImageAlbumModel: NSObject {
     //相簿名称
-    var title:String?
+    public var title:String?
     ////相簿内的资源
-    var fetchResult:[WFAsset]?
+    public var fetchResult:[WFAsset]?
 }
-class WFAsset: NSObject {
+public class WFAsset: NSObject {
     ///选中的下标
-    var count:Int = 0
+    public var count:Int = 0
     
-    var asset:PHAsset?
+    public var asset:PHAsset?
     
     ///记录collection的contOffset
-    var offset:CGPoint?
+    public var offset:CGPoint?
 }

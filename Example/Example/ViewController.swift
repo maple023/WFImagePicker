@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  WFImagePicker
+//  Example
 //
 //  Created by happi on 2018/7/7.
 //  Copyright © 2018年 feitan. All rights reserved.
@@ -20,8 +20,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
     @IBAction func addImage(_ sender: UIButton) {
         
         
@@ -44,9 +43,9 @@ class ViewController: UIViewController {
         self.present(vc, animated: true, completion: nil)
     }
     
-}
-extension ViewController:WFImagePickerControllerDelegate {
     
+}
+extension ViewController : WFImagePickerControllerDelegate {
     ///调用系统相机 拍照返回的图片
     func wFImagePickerController(_ controller: WFImagePickerController, didCameraDone image: UIImage) {
         print("-->\(image)")
@@ -70,4 +69,6 @@ extension ViewController:WFImagePickerControllerDelegate {
             }
         }
     }
+    
+    
 }

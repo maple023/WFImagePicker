@@ -1,4 +1,4 @@
-@version = '0.0.5'
+@version = '0.0.6'
   Pod::Spec.new do |s|
   s.name = 'WFImagePicker'
   s.version = @version
@@ -14,10 +14,8 @@
   s.framework = "Foundation","UIKit","Photos"
   #s.dependency 'MLeaksFinder'
 
-  s.source_files = 'WFImagePicker/WFImagePicker/**/*.swift'
-
-
-  s.resources    = 'WFImagePicker/WFImagePicker/WFImagePicker.bundle'
+  s.source_files = 'Source/**/*.swift'
+  s.resources = 'Source/WFImagePicker.bundle'
 
 
   # s.resource  = "icon.png"

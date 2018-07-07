@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  WFImagePicker
+//  Example
 //
 //  Created by happi on 2018/7/7.
 //  Copyright © 2018年 feitan. All rights reserved.

@@ -10,15 +10,14 @@ import UIKit
 import Photos
 
 //相簿列表项
-struct WFImageAlbumItem {
+public struct WFImageAlbumItem {
     //相簿名称
     var title:String?
     ////相簿内的资源
     var fetchResult:PHFetchResult<PHAsset>
 }
 
-
-protocol WFImagePickerControllerDelegate:NSObjectProtocol {
+public protocol WFImagePickerControllerDelegate:NSObjectProtocol {
     ///完成
     func wFImagePickerController(_ controller: WFImagePickerController, didImagePickerDone assets: [WFAsset])
     //拍照完成
@@ -26,14 +25,14 @@ protocol WFImagePickerControllerDelegate:NSObjectProtocol {
     
 }
 
-class WFImagePickerController: UIViewController {
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+public class WFImagePickerController: UIViewController {
+    override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         self.modalPresentationStyle = .custom
         self.transitioningDelegate = self
     }
     
-    init(_ configuration:WFImagePickerConfiguration) {
+    public init(_ configuration:WFImagePickerConfiguration) {
         super.init(nibName: nil, bundle: nil)
         self.configuration = configuration
         
@@ -41,28 +40,28 @@ class WFImagePickerController: UIViewController {
         self.transitioningDelegate = self
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    override func loadView() {
+    override public func loadView() {
         let view = UIView()
         view.backgroundColor = UIColor.clear
         self.view = view;
         drawWithView()
     }
     //相簿列表项集合
-    var items:[WFImageAlbumItem] = []
+    public var items:[WFImageAlbumItem] = []
     
-    weak var delegate: WFImagePickerControllerDelegate?
+    public weak var delegate: WFImagePickerControllerDelegate?
     //当前显示的相簿
-    var item:WFImageAlbumModel?
+    public var item:WFImageAlbumModel?
     //带缓存的图片管理对象
-    var imageManager:PHCachingImageManager!
+    public var imageManager:PHCachingImageManager!
     
     /// 配置
-    var configuration:WFImagePickerConfiguration = WFImagePickerConfiguration();
+    public var configuration:WFImagePickerConfiguration = WFImagePickerConfiguration();
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
@@ -114,7 +113,7 @@ class WFImagePickerController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(WFImagePickerController.imagePickerDone(_:)), name: NSNotification.Name(rawValue: WF_NotificationDone), object: nil)
         
     }
-    override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         let button:UIButton = toolBar.doneBtn.customView as! UIButton
@@ -132,7 +131,7 @@ class WFImagePickerController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: WF_NotificationDone), object: nil)
     }
     
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -273,12 +272,12 @@ class WFImagePickerController: UIViewController {
 extension WFImagePickerController: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
     //每个分区含有的 item 个数
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.item?.fetchResult?.count ?? 0;
     }
     
     //返回 cell
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: contentIdentifier, for: indexPath) as! WFImagePickerCollectionViewCell;
         
         let asset = self.item?.fetchResult?[indexPath.row]
@@ -302,7 +301,7 @@ extension WFImagePickerController: UICollectionViewDelegate,UICollectionViewData
     }
     
     //每个cell 尺寸
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if let asset = self.item?.fetchResult?[indexPath.row].asset {
             //更具原图比例计算缩略图大小
             let contentHeight = (configuration.pickerHeight - WF_TOOLBAR_HEIGHT - 5)
@@ -313,7 +312,7 @@ extension WFImagePickerController: UICollectionViewDelegate,UICollectionViewData
     }
    
     //item 对应的点击事件
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let assets = self.item?.fetchResult {
             let vc = WFPhotoBrowserViewController(configuration, selectIndex: indexPath.row, assets: assets)
             self.present(vc, animated: true, completion: nil)
@@ -321,7 +320,7 @@ extension WFImagePickerController: UICollectionViewDelegate,UICollectionViewData
         
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let cells = collectionView.visibleCells
         for cell in cells {
             let cell1 = cell as! WFImagePickerCollectionViewCell
@@ -423,7 +422,7 @@ extension WFImagePickerController: UIImagePickerControllerDelegate, UINavigation
     //当用户选择一个图片以后，有可能调用两种不同的函数，根据版本的不同。所以，如果要同时支持高版本和低版本的兼容性，那么就要处理两种函数。
     
     //3.x  用户选中图片后的回调
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         picker.dismiss(animated: false, completion: nil)
         
         let image:UIImage? = info[UIImagePickerControllerOriginalImage] as? UIImage //原图
@@ -453,7 +452,7 @@ extension WFImagePickerController: UIImagePickerControllerDelegate, UINavigation
     }
     
     // 用户选择取消
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+    public func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }
 }
@@ -464,7 +463,7 @@ extension WFImagePickerController : UIViewControllerTransitioningDelegate {
      presentedViewController     将要跳转到的目标控制器
      presentingViewController    跳转前的原控制器
      */
-    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+    public func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
         return WFPresentationController(presentedViewController: presented, presenting: presenting,configuration: configuration)
     }
 }
