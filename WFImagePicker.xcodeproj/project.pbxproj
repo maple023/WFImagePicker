@@ -7,184 +7,147 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		096436F7384CE708011A2343 /* Pods_WFImagePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EBDBE208A5A76264E8DBE40 /* Pods_WFImagePicker.framework */; };
-		3C2833E120E9DB17002BD16A /* WFPhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2833E020E9DB17002BD16A /* WFPhotoCollectionViewController.swift */; };
-		3C2833E520EA2D43002BD16A /* WFImageAlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2833E420EA2D43002BD16A /* WFImageAlbumModel.swift */; };
-		3C36CC5F20E63B4000305AA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C36CC5E20E63B4000305AA2 /* AppDelegate.swift */; };
-		3C36CC6120E63B4000305AA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C36CC6020E63B4000305AA2 /* ViewController.swift */; };
-		3C36CC6420E63B4000305AA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C36CC6220E63B4000305AA2 /* Main.storyboard */; };
-		3C36CC6620E63B4200305AA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C36CC6520E63B4200305AA2 /* Assets.xcassets */; };
-		3C36CC6920E63B4200305AA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C36CC6720E63B4200305AA2 /* LaunchScreen.storyboard */; };
-		3C36CC7220E63FE600305AA2 /* WFImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C36CC7120E63FE600305AA2 /* WFImagePickerController.swift */; };
-		3C36CC7420E649DD00305AA2 /* WFPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C36CC7320E649DD00305AA2 /* WFPresentationController.swift */; };
-		3C648E4F20E67B1900200155 /* WFImagePickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C648E4E20E67B1900200155 /* WFImagePickerCollectionViewCell.swift */; };
-		3C648E5120E6848900200155 /* WFToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C648E5020E6848900200155 /* WFToolbar.swift */; };
-		3C648E5620E6963100200155 /* WFConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C648E5520E6963100200155 /* WFConfig.swift */; };
-		3C648EFF20EE234700518F24 /* WFImagePickerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C648EFE20EE234700518F24 /* WFImagePickerConfiguration.swift */; };
-		3C8D567F20EB168300A4D1C5 /* WFUserContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D567E20EB168300A4D1C5 /* WFUserContext.swift */; };
-		3C8D568120EB2C1700A4D1C5 /* WFPhotoBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D568020EB2C1700A4D1C5 /* WFPhotoBrowserViewController.swift */; };
-		3C8D568920EB4F4E00A4D1C5 /* WFPhotoBrowserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D568820EB4F4E00A4D1C5 /* WFPhotoBrowserCollectionViewCell.swift */; };
-		3C9CCE6220EFF224005F19BC /* back_left@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C9CCE6020EFF224005F19BC /* back_left@3x.png */; };
-		3C9CCE6320EFF224005F19BC /* back_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C9CCE6120EFF224005F19BC /* back_left@2x.png */; };
-		3CF53B1320E6AE2E004B4626 /* WFPhotoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF53B1220E6AE2E004B4626 /* WFPhotoListController.swift */; };
-		3CF53B1520E6AF3A004B4626 /* WFPhotoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF53B1420E6AF3A004B4626 /* WFPhotoListTableViewCell.swift */; };
+		3C9CCE8F20EFFC2C005F19BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CCE8E20EFFC2C005F19BC /* AppDelegate.swift */; };
+		3C9CCE9120EFFC2C005F19BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CCE9020EFFC2C005F19BC /* ViewController.swift */; };
+		3C9CCE9420EFFC2C005F19BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9CCE9220EFFC2C005F19BC /* Main.storyboard */; };
+		3C9CCE9620EFFC2D005F19BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C9CCE9520EFFC2D005F19BC /* Assets.xcassets */; };
+		3C9CCE9920EFFC2D005F19BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9CCE9720EFFC2D005F19BC /* LaunchScreen.storyboard */; };
+		3C9CCEB620EFFC41005F19BC /* WFImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CCEA520EFFC41005F19BC /* WFImagePickerController.swift */; };
+		3C9CCEB720EFFC41005F19BC /* WFPhotoBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CCEA620EFFC41005F19BC /* WFPhotoBrowserViewController.swift */; };
+		3C9CCEB820EFFC41005F19BC /* WFPhotoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CCEA720EFFC41005F19BC /* WFPhotoListController.swift */; };
+		3C9CCEB920EFFC41005F19BC /* WFPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CCEA820EFFC41005F19BC /* WFPresentationController.swift */; };
+		3C9CCEBA20EFFC41005F19BC /* WFPhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CCEA920EFFC41005F19BC /* WFPhotoCollectionViewController.swift */; };
+		3C9CCEBB20EFFC41005F19BC /* WFImagePickerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CCEAB20EFFC41005F19BC /* WFImagePickerConfiguration.swift */; };
+		3C9CCEBC20EFFC41005F19BC /* WFConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CCEAC20EFFC41005F19BC /* WFConfig.swift */; };
+		3C9CCEBD20EFFC41005F19BC /* WFUserContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CCEAD20EFFC41005F19BC /* WFUserContext.swift */; };
+		3C9CCEBE20EFFC41005F19BC /* WFImageAlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CCEAE20EFFC41005F19BC /* WFImageAlbumModel.swift */; };
+		3C9CCEBF20EFFC41005F19BC /* WFImagePickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CCEB020EFFC41005F19BC /* WFImagePickerCollectionViewCell.swift */; };
+		3C9CCEC020EFFC42005F19BC /* WFPhotoBrowserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CCEB120EFFC41005F19BC /* WFPhotoBrowserCollectionViewCell.swift */; };
+		3C9CCEC120EFFC42005F19BC /* WFPhotoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CCEB220EFFC41005F19BC /* WFPhotoListTableViewCell.swift */; };
+		3C9CCEC220EFFC42005F19BC /* WFToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CCEB320EFFC41005F19BC /* WFToolbar.swift */; };
+		3CAE8FD520F0AE4D00E402F9 /* WFImagePicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3CAE8FD420F0AE4D00E402F9 /* WFImagePicker.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3C2833E020E9DB17002BD16A /* WFPhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFPhotoCollectionViewController.swift; sourceTree = "<group>"; };
-		3C2833E420EA2D43002BD16A /* WFImageAlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFImageAlbumModel.swift; sourceTree = "<group>"; };
-		3C36CC5B20E63B4000305AA2 /* WFImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WFImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C36CC5E20E63B4000305AA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3C36CC6020E63B4000305AA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3C36CC6320E63B4000305AA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3C36CC6520E63B4200305AA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3C36CC6820E63B4200305AA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3C36CC6A20E63B4200305AA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C36CC7120E63FE600305AA2 /* WFImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFImagePickerController.swift; sourceTree = "<group>"; };
-		3C36CC7320E649DD00305AA2 /* WFPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFPresentationController.swift; sourceTree = "<group>"; };
-		3C648E4E20E67B1900200155 /* WFImagePickerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFImagePickerCollectionViewCell.swift; sourceTree = "<group>"; };
-		3C648E5020E6848900200155 /* WFToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFToolbar.swift; sourceTree = "<group>"; };
-		3C648E5520E6963100200155 /* WFConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFConfig.swift; sourceTree = "<group>"; };
-		3C648EFE20EE234700518F24 /* WFImagePickerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFImagePickerConfiguration.swift; sourceTree = "<group>"; };
-		3C8D567E20EB168300A4D1C5 /* WFUserContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFUserContext.swift; sourceTree = "<group>"; };
-		3C8D568020EB2C1700A4D1C5 /* WFPhotoBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFPhotoBrowserViewController.swift; sourceTree = "<group>"; };
-		3C8D568820EB4F4E00A4D1C5 /* WFPhotoBrowserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFPhotoBrowserCollectionViewCell.swift; sourceTree = "<group>"; };
-		3C9CCE6020EFF224005F19BC /* back_left@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_left@3x.png"; sourceTree = "<group>"; };
-		3C9CCE6120EFF224005F19BC /* back_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_left@2x.png"; sourceTree = "<group>"; };
-		3CF53B1220E6AE2E004B4626 /* WFPhotoListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFPhotoListController.swift; sourceTree = "<group>"; };
-		3CF53B1420E6AF3A004B4626 /* WFPhotoListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFPhotoListTableViewCell.swift; sourceTree = "<group>"; };
-		460E2C40C3562DBCE672989A /* Pods-WFImagePicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WFImagePicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WFImagePicker/Pods-WFImagePicker.debug.xcconfig"; sourceTree = "<group>"; };
-		7AD0BD5B39638C47DB87C11F /* Pods-WFImagePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WFImagePicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-WFImagePicker/Pods-WFImagePicker.release.xcconfig"; sourceTree = "<group>"; };
-		7EBDBE208A5A76264E8DBE40 /* Pods_WFImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WFImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C9CCE8B20EFFC2C005F19BC /* WFImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WFImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C9CCE8E20EFFC2C005F19BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C9CCE9020EFFC2C005F19BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C9CCE9320EFFC2C005F19BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C9CCE9520EFFC2D005F19BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C9CCE9820EFFC2D005F19BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C9CCE9A20EFFC2D005F19BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C9CCEA520EFFC41005F19BC /* WFImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFImagePickerController.swift; sourceTree = "<group>"; };
+		3C9CCEA620EFFC41005F19BC /* WFPhotoBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFPhotoBrowserViewController.swift; sourceTree = "<group>"; };
+		3C9CCEA720EFFC41005F19BC /* WFPhotoListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFPhotoListController.swift; sourceTree = "<group>"; };
+		3C9CCEA820EFFC41005F19BC /* WFPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFPresentationController.swift; sourceTree = "<group>"; };
+		3C9CCEA920EFFC41005F19BC /* WFPhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFPhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		3C9CCEAB20EFFC41005F19BC /* WFImagePickerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFImagePickerConfiguration.swift; sourceTree = "<group>"; };
+		3C9CCEAC20EFFC41005F19BC /* WFConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFConfig.swift; sourceTree = "<group>"; };
+		3C9CCEAD20EFFC41005F19BC /* WFUserContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFUserContext.swift; sourceTree = "<group>"; };
+		3C9CCEAE20EFFC41005F19BC /* WFImageAlbumModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFImageAlbumModel.swift; sourceTree = "<group>"; };
+		3C9CCEB020EFFC41005F19BC /* WFImagePickerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFImagePickerCollectionViewCell.swift; sourceTree = "<group>"; };
+		3C9CCEB120EFFC41005F19BC /* WFPhotoBrowserCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFPhotoBrowserCollectionViewCell.swift; sourceTree = "<group>"; };
+		3C9CCEB220EFFC41005F19BC /* WFPhotoListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFPhotoListTableViewCell.swift; sourceTree = "<group>"; };
+		3C9CCEB320EFFC41005F19BC /* WFToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFToolbar.swift; sourceTree = "<group>"; };
+		3CAE8FD420F0AE4D00E402F9 /* WFImagePicker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WFImagePicker.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3C36CC5820E63B4000305AA2 /* Frameworks */ = {
+		3C9CCE8820EFFC2C005F19BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				096436F7384CE708011A2343 /* Pods_WFImagePicker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12D666DC39EA796C9AD2B946 /* Frameworks */ = {
+		3C9CCE8220EFFC2C005F19BC = {
 			isa = PBXGroup;
 			children = (
-				7EBDBE208A5A76264E8DBE40 /* Pods_WFImagePicker.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3C2833DD20E9D95F002BD16A /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				3C36CC7120E63FE600305AA2 /* WFImagePickerController.swift */,
-				3CF53B1220E6AE2E004B4626 /* WFPhotoListController.swift */,
-				3C2833E020E9DB17002BD16A /* WFPhotoCollectionViewController.swift */,
-				3C8D568020EB2C1700A4D1C5 /* WFPhotoBrowserViewController.swift */,
-				3C36CC7320E649DD00305AA2 /* WFPresentationController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		3C2833DF20E9D972002BD16A /* View */ = {
-			isa = PBXGroup;
-			children = (
-				3C648E5020E6848900200155 /* WFToolbar.swift */,
-				3CF53B1420E6AF3A004B4626 /* WFPhotoListTableViewCell.swift */,
-				3C648E4E20E67B1900200155 /* WFImagePickerCollectionViewCell.swift */,
-				3C8D568820EB4F4E00A4D1C5 /* WFPhotoBrowserCollectionViewCell.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		3C36CC5220E63B4000305AA2 = {
-			isa = PBXGroup;
-			children = (
-				3C36CC5D20E63B4000305AA2 /* WFImagePicker */,
-				3C36CC5C20E63B4000305AA2 /* Products */,
-				89CE2876DBBE565DFA5BB7FA /* Pods */,
-				12D666DC39EA796C9AD2B946 /* Frameworks */,
+				3C9CCE8D20EFFC2C005F19BC /* WFImagePicker */,
+				3C9CCE8C20EFFC2C005F19BC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3C36CC5C20E63B4000305AA2 /* Products */ = {
+		3C9CCE8C20EFFC2C005F19BC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3C36CC5B20E63B4000305AA2 /* WFImagePicker.app */,
+				3C9CCE8B20EFFC2C005F19BC /* WFImagePicker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3C36CC5D20E63B4000305AA2 /* WFImagePicker */ = {
+		3C9CCE8D20EFFC2C005F19BC /* WFImagePicker */ = {
 			isa = PBXGroup;
 			children = (
-				3C36CC7020E63C6500305AA2 /* WFImagePicker */,
-				3C36CC5E20E63B4000305AA2 /* AppDelegate.swift */,
-				3C36CC6020E63B4000305AA2 /* ViewController.swift */,
-				3C36CC6220E63B4000305AA2 /* Main.storyboard */,
-				3C36CC6520E63B4200305AA2 /* Assets.xcassets */,
-				3C36CC6720E63B4200305AA2 /* LaunchScreen.storyboard */,
-				3C36CC6A20E63B4200305AA2 /* Info.plist */,
+				3C9CCEA020EFFC41005F19BC /* WFImagePicker */,
+				3C9CCE8E20EFFC2C005F19BC /* AppDelegate.swift */,
+				3C9CCE9020EFFC2C005F19BC /* ViewController.swift */,
+				3C9CCE9220EFFC2C005F19BC /* Main.storyboard */,
+				3C9CCE9520EFFC2D005F19BC /* Assets.xcassets */,
+				3C9CCE9720EFFC2D005F19BC /* LaunchScreen.storyboard */,
+				3C9CCE9A20EFFC2D005F19BC /* Info.plist */,
 			);
 			path = WFImagePicker;
 			sourceTree = "<group>";
 		};
-		3C36CC7020E63C6500305AA2 /* WFImagePicker */ = {
+		3C9CCEA020EFFC41005F19BC /* WFImagePicker */ = {
 			isa = PBXGroup;
 			children = (
-				3C9CCE5B20EFF1DA005F19BC /* Resources */,
-				3C2833DF20E9D972002BD16A /* View */,
-				3C2833DD20E9D95F002BD16A /* Controller */,
-				3C648E5220E68F7700200155 /* Model */,
+				3CAE8FD420F0AE4D00E402F9 /* WFImagePicker.bundle */,
+				3C9CCEA420EFFC41005F19BC /* Controller */,
+				3C9CCEAA20EFFC41005F19BC /* Model */,
+				3C9CCEAF20EFFC41005F19BC /* View */,
 			);
 			path = WFImagePicker;
 			sourceTree = "<group>";
 		};
-		3C648E5220E68F7700200155 /* Model */ = {
+		3C9CCEA420EFFC41005F19BC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3C648E5520E6963100200155 /* WFConfig.swift */,
-				3C2833E420EA2D43002BD16A /* WFImageAlbumModel.swift */,
-				3C8D567E20EB168300A4D1C5 /* WFUserContext.swift */,
-				3C648EFE20EE234700518F24 /* WFImagePickerConfiguration.swift */,
+				3C9CCEA520EFFC41005F19BC /* WFImagePickerController.swift */,
+				3C9CCEA620EFFC41005F19BC /* WFPhotoBrowserViewController.swift */,
+				3C9CCEA720EFFC41005F19BC /* WFPhotoListController.swift */,
+				3C9CCEA820EFFC41005F19BC /* WFPresentationController.swift */,
+				3C9CCEA920EFFC41005F19BC /* WFPhotoCollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3C9CCEAA20EFFC41005F19BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C9CCEAB20EFFC41005F19BC /* WFImagePickerConfiguration.swift */,
+				3C9CCEAC20EFFC41005F19BC /* WFConfig.swift */,
+				3C9CCEAD20EFFC41005F19BC /* WFUserContext.swift */,
+				3C9CCEAE20EFFC41005F19BC /* WFImageAlbumModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		3C9CCE5B20EFF1DA005F19BC /* Resources */ = {
+		3C9CCEAF20EFFC41005F19BC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3C9CCE6120EFF224005F19BC /* back_left@2x.png */,
-				3C9CCE6020EFF224005F19BC /* back_left@3x.png */,
+				3C9CCEB020EFFC41005F19BC /* WFImagePickerCollectionViewCell.swift */,
+				3C9CCEB120EFFC41005F19BC /* WFPhotoBrowserCollectionViewCell.swift */,
+				3C9CCEB220EFFC41005F19BC /* WFPhotoListTableViewCell.swift */,
+				3C9CCEB320EFFC41005F19BC /* WFToolbar.swift */,
 			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		89CE2876DBBE565DFA5BB7FA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				460E2C40C3562DBCE672989A /* Pods-WFImagePicker.debug.xcconfig */,
-				7AD0BD5B39638C47DB87C11F /* Pods-WFImagePicker.release.xcconfig */,
-			);
-			name = Pods;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3C36CC5A20E63B4000305AA2 /* WFImagePicker */ = {
+		3C9CCE8A20EFFC2C005F19BC /* WFImagePicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3C36CC6D20E63B4200305AA2 /* Build configuration list for PBXNativeTarget "WFImagePicker" */;
+			buildConfigurationList = 3C9CCE9D20EFFC2D005F19BC /* Build configuration list for PBXNativeTarget "WFImagePicker" */;
 			buildPhases = (
-				F00267B2A79913A8A3D52311 /* [CP] Check Pods Manifest.lock */,
-				3C36CC5720E63B4000305AA2 /* Sources */,
-				3C36CC5820E63B4000305AA2 /* Frameworks */,
-				3C36CC5920E63B4000305AA2 /* Resources */,
-				7D86AD49DBBEC5D13CD61257 /* [CP] Embed Pods Frameworks */,
+				3C9CCE8720EFFC2C005F19BC /* Sources */,
+				3C9CCE8820EFFC2C005F19BC /* Frameworks */,
+				3C9CCE8920EFFC2C005F19BC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -192,25 +155,25 @@
 			);
 			name = WFImagePicker;
 			productName = WFImagePicker;
-			productReference = 3C36CC5B20E63B4000305AA2 /* WFImagePicker.app */;
+			productReference = 3C9CCE8B20EFFC2C005F19BC /* WFImagePicker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3C36CC5320E63B4000305AA2 /* Project object */ = {
+		3C9CCE8320EFFC2C005F19BC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = feitan;
 				TargetAttributes = {
-					3C36CC5A20E63B4000305AA2 = {
+					3C9CCE8A20EFFC2C005F19BC = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 3C36CC5620E63B4000305AA2 /* Build configuration list for PBXProject "WFImagePicker" */;
+			buildConfigurationList = 3C9CCE8620EFFC2C005F19BC /* Build configuration list for PBXProject "WFImagePicker" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -218,110 +181,68 @@
 				en,
 				Base,
 			);
-			mainGroup = 3C36CC5220E63B4000305AA2;
-			productRefGroup = 3C36CC5C20E63B4000305AA2 /* Products */;
+			mainGroup = 3C9CCE8220EFFC2C005F19BC;
+			productRefGroup = 3C9CCE8C20EFFC2C005F19BC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3C36CC5A20E63B4000305AA2 /* WFImagePicker */,
+				3C9CCE8A20EFFC2C005F19BC /* WFImagePicker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3C36CC5920E63B4000305AA2 /* Resources */ = {
+		3C9CCE8920EFFC2C005F19BC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C36CC6920E63B4200305AA2 /* LaunchScreen.storyboard in Resources */,
-				3C9CCE6320EFF224005F19BC /* back_left@2x.png in Resources */,
-				3C9CCE6220EFF224005F19BC /* back_left@3x.png in Resources */,
-				3C36CC6620E63B4200305AA2 /* Assets.xcassets in Resources */,
-				3C36CC6420E63B4000305AA2 /* Main.storyboard in Resources */,
+				3CAE8FD520F0AE4D00E402F9 /* WFImagePicker.bundle in Resources */,
+				3C9CCE9920EFFC2D005F19BC /* LaunchScreen.storyboard in Resources */,
+				3C9CCE9620EFFC2D005F19BC /* Assets.xcassets in Resources */,
+				3C9CCE9420EFFC2C005F19BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		7D86AD49DBBEC5D13CD61257 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-WFImagePicker/Pods-WFImagePicker-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework",
-				"${BUILT_PRODUCTS_DIR}/MLeaksFinder/MLeaksFinder.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBRetainCycleDetector.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLeaksFinder.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WFImagePicker/Pods-WFImagePicker-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F00267B2A79913A8A3D52311 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WFImagePicker-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		3C36CC5720E63B4000305AA2 /* Sources */ = {
+		3C9CCE8720EFFC2C005F19BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C36CC6120E63B4000305AA2 /* ViewController.swift in Sources */,
-				3C36CC7220E63FE600305AA2 /* WFImagePickerController.swift in Sources */,
-				3C648EFF20EE234700518F24 /* WFImagePickerConfiguration.swift in Sources */,
-				3C648E5120E6848900200155 /* WFToolbar.swift in Sources */,
-				3CF53B1520E6AF3A004B4626 /* WFPhotoListTableViewCell.swift in Sources */,
-				3C36CC7420E649DD00305AA2 /* WFPresentationController.swift in Sources */,
-				3C8D568920EB4F4E00A4D1C5 /* WFPhotoBrowserCollectionViewCell.swift in Sources */,
-				3C648E4F20E67B1900200155 /* WFImagePickerCollectionViewCell.swift in Sources */,
-				3C8D568120EB2C1700A4D1C5 /* WFPhotoBrowserViewController.swift in Sources */,
-				3C2833E120E9DB17002BD16A /* WFPhotoCollectionViewController.swift in Sources */,
-				3C648E5620E6963100200155 /* WFConfig.swift in Sources */,
-				3C2833E520EA2D43002BD16A /* WFImageAlbumModel.swift in Sources */,
-				3CF53B1320E6AE2E004B4626 /* WFPhotoListController.swift in Sources */,
-				3C36CC5F20E63B4000305AA2 /* AppDelegate.swift in Sources */,
-				3C8D567F20EB168300A4D1C5 /* WFUserContext.swift in Sources */,
+				3C9CCEB920EFFC41005F19BC /* WFPresentationController.swift in Sources */,
+				3C9CCE9120EFFC2C005F19BC /* ViewController.swift in Sources */,
+				3C9CCEC220EFFC42005F19BC /* WFToolbar.swift in Sources */,
+				3C9CCEBB20EFFC41005F19BC /* WFImagePickerConfiguration.swift in Sources */,
+				3C9CCEB620EFFC41005F19BC /* WFImagePickerController.swift in Sources */,
+				3C9CCE8F20EFFC2C005F19BC /* AppDelegate.swift in Sources */,
+				3C9CCEC120EFFC42005F19BC /* WFPhotoListTableViewCell.swift in Sources */,
+				3C9CCEB720EFFC41005F19BC /* WFPhotoBrowserViewController.swift in Sources */,
+				3C9CCEB820EFFC41005F19BC /* WFPhotoListController.swift in Sources */,
+				3C9CCEBE20EFFC41005F19BC /* WFImageAlbumModel.swift in Sources */,
+				3C9CCEBC20EFFC41005F19BC /* WFConfig.swift in Sources */,
+				3C9CCEC020EFFC42005F19BC /* WFPhotoBrowserCollectionViewCell.swift in Sources */,
+				3C9CCEBF20EFFC41005F19BC /* WFImagePickerCollectionViewCell.swift in Sources */,
+				3C9CCEBA20EFFC41005F19BC /* WFPhotoCollectionViewController.swift in Sources */,
+				3C9CCEBD20EFFC41005F19BC /* WFUserContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3C36CC6220E63B4000305AA2 /* Main.storyboard */ = {
+		3C9CCE9220EFFC2C005F19BC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3C36CC6320E63B4000305AA2 /* Base */,
+				3C9CCE9320EFFC2C005F19BC /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		3C36CC6720E63B4200305AA2 /* LaunchScreen.storyboard */ = {
+		3C9CCE9720EFFC2D005F19BC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3C36CC6820E63B4200305AA2 /* Base */,
+				3C9CCE9820EFFC2D005F19BC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -329,7 +250,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3C36CC6B20E63B4200305AA2 /* Debug */ = {
+		3C9CCE9B20EFFC2D005F19BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -380,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -389,7 +310,7 @@
 			};
 			name = Debug;
 		};
-		3C36CC6C20E63B4200305AA2 /* Release */ = {
+		3C9CCE9C20EFFC2D005F19BC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -434,7 +355,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -443,9 +364,8 @@
 			};
 			name = Release;
 		};
-		3C36CC6E20E63B4200305AA2 /* Debug */ = {
+		3C9CCE9E20EFFC2D005F19BC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 460E2C40C3562DBCE672989A /* Pods-WFImagePicker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -462,9 +382,8 @@
 			};
 			name = Debug;
 		};
-		3C36CC6F20E63B4200305AA2 /* Release */ = {
+		3C9CCE9F20EFFC2D005F19BC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AD0BD5B39638C47DB87C11F /* Pods-WFImagePicker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -484,25 +403,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3C36CC5620E63B4000305AA2 /* Build configuration list for PBXProject "WFImagePicker" */ = {
+		3C9CCE8620EFFC2C005F19BC /* Build configuration list for PBXProject "WFImagePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3C36CC6B20E63B4200305AA2 /* Debug */,
-				3C36CC6C20E63B4200305AA2 /* Release */,
+				3C9CCE9B20EFFC2D005F19BC /* Debug */,
+				3C9CCE9C20EFFC2D005F19BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3C36CC6D20E63B4200305AA2 /* Build configuration list for PBXNativeTarget "WFImagePicker" */ = {
+		3C9CCE9D20EFFC2D005F19BC /* Build configuration list for PBXNativeTarget "WFImagePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3C36CC6E20E63B4200305AA2 /* Debug */,
-				3C36CC6F20E63B4200305AA2 /* Release */,
+				3C9CCE9E20EFFC2D005F19BC /* Debug */,
+				3C9CCE9F20EFFC2D005F19BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3C36CC5320E63B4000305AA2 /* Project object */;
+	rootObject = 3C9CCE8320EFFC2C005F19BC /* Project object */;
 }

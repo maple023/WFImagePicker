@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  WFImagePicker
 //
-//  Created by happi on 2018/6/29.
+//  Created by happi on 2018/7/7.
 //  Copyright © 2018年 feitan. All rights reserved.
 //
 
@@ -11,21 +11,16 @@ import Photos
 
 class ViewController: UIViewController {
 
-   
-    @IBOutlet weak var heightConstraint: NSLayoutConstraint!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
-       
-        
     }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
 
     @IBAction func addImage(_ sender: UIButton) {
         
@@ -49,10 +44,6 @@ class ViewController: UIViewController {
         self.present(vc, animated: true, completion: nil)
     }
     
-    
-    
-    
-    
 }
 extension ViewController:WFImagePickerControllerDelegate {
     
@@ -70,12 +61,12 @@ extension ViewController:WFImagePickerControllerDelegate {
             option.isSynchronous = true
             option.resizeMode = .exact
             PHImageManager.default().requestImage(for: asset.asset!, targetSize: PHImageManagerMaximumSize,
-                                           contentMode: .aspectFill, options: option) {
-                                            (image, nfo) in
-                                            if let image = image {
-                                                print("---\(asset.count)    \(image)")
-                                            }
-            
+                                                  contentMode: .aspectFill, options: option) {
+                                                    (image, nfo) in
+                                                    if let image = image {
+                                                        print("---\(asset.count)    \(image)")
+                                                    }
+                                                    
             }
         }
     }

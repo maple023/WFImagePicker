@@ -119,8 +119,8 @@ class WFPhotoBrowserViewController: UIViewController {
         backBtn.setTitleColor(UIColor.white, for: .highlighted)
         backBtn.contentHorizontalAlignment = .left
         backBtn.titleEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 0)
-        backBtn.setImage(UIImage(named: "back_left"), for: UIControlState())
-        backBtn.setImage(UIImage(named: "back_left"), for: .highlighted)
+        backBtn.setImage(UIImage(named: "WFImagePicker.bundle/wf_back_left"), for: UIControlState())
+        backBtn.setImage(UIImage(named: "WFImagePicker.bundle/wf_back_left"), for: .highlighted)
         backBtn.addTarget(self, action: #selector(didClickBackButton(_:)), for: .touchUpInside)
         backBtn.translatesAutoresizingMaskIntoConstraints = false
         navView.addSubview(backBtn)
