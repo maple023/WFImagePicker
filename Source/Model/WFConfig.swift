@@ -43,7 +43,7 @@ let WF_TabSafeAreaBottomHeight:CGFloat = (WF_iPhoneX ? 49.0 + 34.0 : 49.0)
 // 获取 图片路径
 func WFBundlePath(_ fileName:String) -> String {
     if Release {
-        return "Frameworks/Frameworks.framework/WFImagePicker.bundle/\(fileName)"
+        return "Frameworks/WFImagePicker.framework/WFImagePicker.bundle/\(fileName)"
     } else {
         return "WFImagePicker.bundle/\(fileName)"
     }
