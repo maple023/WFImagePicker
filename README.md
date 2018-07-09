@@ -6,13 +6,13 @@ Swift仿QQ图片选择器
 
 
 ### 导入方法
-- 直接把Source文件夹拖入到您的工程中.
+- 方法一、直接把Source文件夹拖入到您的工程中.
 
 ```swift
 一定要将 Model 目录下 的  WFConfig.swift  文件里的  let Release = true 改为 false    不然资源图片无法加载
 ``` 
 
-- Cocoapods安装
+-方法二、 Cocoapods安装
 
 ```swift
 pod search WFImagePicker
